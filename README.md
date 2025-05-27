@@ -7,10 +7,13 @@ In addition this example shows how to set CORS and HSTS headers
 in the nginx config, where also multiple backends and ports can be set.
 
 **Usage:** 
-`cf create-app reverse-proxy`
-`cf set-env reverse-proxy BACKEND_URL "https://mydemo.apps.internal:61443"`
-`cf add-network-policy reverse-proxy mydemo --protocol tcp --port 61443`
-`cf push reverse-proxy -b nginx_buildpack`
+ 
+```
+cf create-app reverse-proxy
+cf set-env reverse-proxy BACKEND_URL "https://mydemo.apps.internal:61443"
+cf add-network-policy reverse-proxy mydemo --protocol tcp --port 61443
+cf push reverse-proxy -b nginx_buildpack
+```
 
 Once the app is running, simply call the URL and see the backend app after logging in.
 
