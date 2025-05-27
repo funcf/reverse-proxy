@@ -4,7 +4,7 @@ A simple example app that runs on Cloud Foundry serving as a reverse proxy
 adding Basic Auth to an app with an internal route that can be configured 
 with an environment variable and an according network policy.
 In addition this example shows how to set CORS and HSTS headers 
-in the nginx config, where also multiple backends and ports can be set.
+in the NGINX config, where also multiple backends and ports can be set.
 
 **Usage:** 
  
@@ -20,7 +20,7 @@ Once the app is running, simply call the URL and see the backend app after loggi
 **User:** `Hello`
 **Password:** `World!`
 
-[More Details about the Staticfile Buildpack](https://docs.cloudfoundry.org/buildpacks/staticfile/#staticfile)
+[More Details about the NGINX Buildpack](https://docs.cloudfoundry.org/buildpacks/nginx/)
 
 [More Details about Container to Container Networking within Cloud Foudry](https://docs.cloudfoundry.org/concepts/understand-cf-networking.html)
 
