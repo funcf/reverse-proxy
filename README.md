@@ -22,4 +22,8 @@ Once the app is running, simply call the URL and see the backend app after loggi
 
 [More Details about the Staticfile Buildpack](https://docs.cloudfoundry.org/buildpacks/staticfile/#staticfile)
 
+[More Details about Container to Container Networking within Cloud Foudry](https://docs.cloudfoundry.org/concepts/understand-cf-networking.html)
+
+**Good to know (from the link above): To utilize TLS capabilities, the client application can connect to port 61443 on the destination application over HTTPS. Traffic to application container port 61443 is proxied to application port 8080 inside of the container. So the app does not need to implement that. =)**
+
 **Please Note: This is an example app with a unsecure password that you would not have in git without gitcrypt for productive use cases.**
